@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="modal.css">
+
+    <title>Document</title>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div class="backdrop"></div>
+    <h1 id="main-header">Tic Tac Toe</h1>
+    <aside class="modal">
+        <span class="modal-close">&times;</span>
+        <h1 class="header">Choose Your Username</h1>
+        <form action="" class="modal-content">
+            <div>
+                <label for="playername">Playername:</label>
+                <input type="text" name="playername" id="playername" required>
+            </div>
+            <p class="input-error"></p>
+            <div class="footer">
+                <button type="reset" id="cancel-modal-btn" class="btn btn-alt">Cancel</button>
+                <button type="submit" class="btn">Confirm</button>
+            </div>
+        </form>
+    </aside>
+    <section class="player-container">
+        <article id="player-1">
+            <h2>Player 1</h2>
+            <h3>Player Name</h3>
+            <p class="play-symbol">X</p>
+            <button id="edit-player-1-btn" class="btn btn-alt" data-playerid="1">Edit</button>
+        </article>
+        <article id="player-2">
+            <h2>Player 2</h2>
+            <h3>Player Name</h3>
+            <p class="play-symbol">O</p>
+            <button id="edit-player-2-btn" class="btn btn-alt" data-playerid="2">Edit</button>
+        </article>
+    </section>
+    <button class="btn" id="start-game-btn">Start new game</button>
+    <article class="game-over">
+        <h2 class="game-status">You won, <span id="winner-name">PLAYER NAME</span>!</h2>
+        <p>Click "Start New Game" above, to start an new game.</p>
+    </article>
+    <section class="active-game">
+        <p>It's your turn <span id="active-player">PLAYER NAME</span>!</p>
+        <div class="game-container">
+            <div id="1"></div>
+            <div id="2"></div>
+            <div id="3"></div>
+            <div id="4"></div>
+            <div id="5"></div>
+            <div id="6"></div>
+            <div id="7"></div>
+            <div id="8"></div>
+            <div id="9"></div>
+        </div>
+    </section>
+</body>
+
+</html>
